@@ -1,4 +1,4 @@
-# 📝 Offline Google Keep Clone
+# 📝 Offline-Google-Keep-Clone
 
 A lightweight, offline-friendly clone of Google Keep designed for computers without internet access or where Google services are blocked.  
 Built for simplicity, speed, and local note management — no sign-in, no cloud, just fast and private note-taking.
@@ -19,5 +19,5 @@ Built for simplicity, speed, and local note management — no sign-in, no cloud,
 1. **Clone this repository:**
 
    ```bash
-   git clone https://github.com/your-username/offline-keep-clone.git
-   cd offline-keep-clone
+   git clone https://github.com/your-username/Offline-Google-Keep-Clone.git
+   cd Offline-Google-Keep-Clone
