@@ -379,13 +379,6 @@
       setTimeout(() => {
         document.querySelectorAll('.note-content').forEach(ta => autoResizeTextarea(ta));
       }, 0);
-      document.querySelectorAll('.color-picker').forEach(picker => {
-        picker.addEventListener('wheel', function(e) {
-          if (e.deltaY === 0) return;
-          e.preventDefault();
-          picker.scrollLeft += e.deltaY;
-        });
-      });
     });
     function formatDate(date) {
       return new Date(date).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).replace(/ /g, '-');
@@ -423,6 +416,11 @@
       ctr.className = 'note-controls';
       const picker = document.createElement('div');
       picker.className = 'color-picker';
+      picker.addEventListener('wheel', function(e) {
+        if (e.deltaY === 0) return;
+        e.preventDefault();
+        picker.scrollLeft += e.deltaY;
+      });
       ['#fff','#f28b82','#fbbc04','#fff475','#ccff90','#a7ffeb','#cbf0f8','#aecbfa','#d7aefb'].forEach(c => {
         const o = document.createElement('div');
         o.className = 'color-option';
